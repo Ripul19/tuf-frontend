@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; 
 
+
 export default function Table() {
     const [ tableData, setTableData ] = useState([]);
     const [ expandedRow, setExpandedRow ] = useState(null);
-
-    const apiUrl = 'http://localhost:4000/api/table/tableView';
+    
+    const apiUrl = `${process.env.REACT_APP_DOMAIN_NAME}/api/table/tableView`;
+    
 
     useEffect(() => {
         async function fetchData() {

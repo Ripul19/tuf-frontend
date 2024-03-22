@@ -33,7 +33,9 @@ export default function Form() {
                 stdin: formData.stdin,
                 source_code: formData.sourcecode
             }
-            const response = await axios.post('http://localhost:4000/api/table/tableData', responseData);
+
+            const apiUrl = `${process.env.REACT_APP_DOMAIN_NAME}/api/table/tableData`;
+            const response = await axios.post(apiUrl, responseData);
             console.log('Response from server:', response);
             setFormData({
                 username: '',
