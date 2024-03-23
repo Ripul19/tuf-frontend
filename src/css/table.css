@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+tbody tr:hover {
+    background-color: #e2e2e2;
+}
+  
+span.more-less {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+  
+td.source-code {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+  
